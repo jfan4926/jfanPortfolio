@@ -428,11 +428,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-color: var(--accent);
   background: var(--accent-soft);
 }
+/* per-group tints */
+[data-group="lang"]  .stag { background: rgba(99,102,241,0.07);  border-color: rgba(99,102,241,0.18);  color: #6366f1; }
+[data-group="data"]  .stag { background: rgba(14,165,233,0.07);  border-color: rgba(14,165,233,0.18);  color: #0ea5e9; }
+[data-group="ml"]    .stag { background: rgba(16,185,129,0.07);  border-color: rgba(16,185,129,0.18);  color: #10b981; }
+[data-group="infra"] .stag { background: rgba(245,158,11,0.07);  border-color: rgba(245,158,11,0.18);  color: #d97706; }
+
+[data-theme="dark"] [data-group="lang"]  .stag { background: rgba(99,102,241,0.12);  border-color: rgba(99,102,241,0.25); }
+[data-theme="dark"] [data-group="data"]  .stag { background: rgba(14,165,233,0.12);  border-color: rgba(14,165,233,0.25); }
+[data-theme="dark"] [data-group="ml"]    .stag { background: rgba(16,185,129,0.12);  border-color: rgba(16,185,129,0.25); }
+[data-theme="dark"] [data-group="infra"] .stag { background: rgba(245,158,11,0.12);  border-color: rgba(245,158,11,0.25); }
+
 .stag-cert {
   color: var(--text);
   border-color: var(--border-strong);
   font-weight: 500;
+  text-decoration: none;
 }
+.stag-cert:hover { opacity: 0.8; }
 .stag-cert::before {
   content: '✦ ';
   font-size: 9px;
