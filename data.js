@@ -71,7 +71,7 @@ const PROJECTS = [
     thumbLabel: "OpenAI · Spotipy",
     desc: "Python tool that uses OpenAI API to analyze and auto-categorize Spotify playlists by language, vocal type, and genre — 77.6% faster with multi-threading.",
     tags: ["Python", "OpenAI API", "Spotipy", "ThreadPoolExecutor"],
-    links: { blog: "https://theparnassus.xyz/2024/11/24/built-a-spotify-playlist-organizer-using-openai-and-python/", github: "https://github.com/jfan4926" },
+    links: { blog: "https://theparnassus.xyz/2024/11/24/built-a-spotify-playlist-organizer-using-openai-and-python/", github: "https://github.com/jfan4926/AI_Playlist_Organizer" },
     metrics: [
       { key: "Speed Improvement", val: "77.6%" },
       { key: "Processing Time", val: "1 min / 30 songs" },
