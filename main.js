@@ -34,8 +34,8 @@ function renderCards() {
   grid.innerHTML = filtered.map(p => `
     <article class="card" onclick="location.href='project.html#${p.id}'">
       <div class="card-thumb">
-        <div class="card-thumb-bg ${p.thumb}">
-          <span style="font-size:42px;position:relative;z-index:1">${p.thumbIcon}</span>
+        <div class="card-thumb-bg">
+          <img src="images/${p.id}.png" alt="${p.title}" loading="lazy" />
           <span class="thumb-label">${p.thumbLabel}</span>
         </div>
       </div>
