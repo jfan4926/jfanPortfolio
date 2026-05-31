@@ -24,8 +24,9 @@ if (!project) {
   document.title = `${project.title} — Portfolio`;
 
   const linksHtml = [
-    project.links.demo ? `<a href="${project.links.demo}" class="btn btn-primary" target="_blank">↗ Live Demo</a>` : '',
-    project.links.github ? `<a href="${project.links.github}" class="btn btn-ghost" target="_blank">⌥ GitHub</a>` : '',
+    project.links.demo   ? `<a href="${project.links.demo}"   class="btn btn-primary" target="_blank">↗ Live Demo</a>` : '',
+    project.links.blog   ? `<a href="${project.links.blog}"   class="btn btn-primary" target="_blank">↗ Blog Post</a>` : '',
+    project.links.github ? `<a href="${project.links.github}" class="btn btn-ghost"   target="_blank">⌥ GitHub</a>` : '',
   ].filter(Boolean).join('');
 
   const metricsHtml = (project.metrics || []).map(m => `

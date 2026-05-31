@@ -53,6 +53,8 @@ function renderCards() {
         <div class="card-tags" style="margin:0">${
           p.links.demo ? `<span class="tag">Live Demo</span>` : ''
         }${
+          p.links.blog ? `<span class="tag">Blog Post</span>` : ''
+        }${
           p.links.github ? `<span class="tag">GitHub</span>` : ''
         }</div>
         <span class="card-arrow">→</span>
