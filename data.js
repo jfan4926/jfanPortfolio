@@ -71,7 +71,7 @@ const PROJECTS = [
     thumbLabel: "ONNX · MobileNetV3",
     desc: "Mobile-first PWA for JLPT N5–N1 kanji writing practice (2,230 characters) with on-device CNN recognition — no backend required.",
     tags: ["JavaScript", "Python", "PyTorch", "ONNX", "MobileNetV3"],
-    links: { demo: "https://kanji-practice.netlify.app" },
+    links: { demo: "https://kanji101.netlify.app/" },
     metrics: [
       { key: "Characters", val: "2,230" },
       { key: "Training Images", val: "630K+" },
