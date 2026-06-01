@@ -1,202 +1,365 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jiayi Fan — Portfolio</title>
-  <meta name="description" content="Portfolio of data analytics, BI dashboards, and web tools by JF." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-</head>
-<body>
-
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="logo">JF<span class="logo-dot">.</span></div>
-      <nav class="header-nav">
-        <a href="mailto:jiayi_fan@alumni.brown.edu" class="nav-link nav-icon" aria-label="Email me">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/jiayifan26/" target="_blank" class="nav-link nav-icon" aria-label="LinkedIn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://github.com/jfan4926" target="_blank" class="nav-link nav-icon" aria-label="GitHub">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        </a>
-        <a href="https://theparnassus.xyz/" target="_blank" class="nav-link nav-icon" aria-label="Blog">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
-        </a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <span class="theme-icon sun">&#9728;</span>
-          <span class="theme-icon moon">&#9790;</span>
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-top">
-          <p class="hero-eyebrow">Portfolio</p>
-          <span class="available-badge">
-            <span class="badge-dot"></span>
-            Open to Work
-          </span>
-        </div>
-        <h1 class="hero-title">Data &amp; <em class="gradient-text">Tools</em></h1>
-        <p class="hero-sub">Analytics engineering, BI dashboards, ML models, and AI-powered tools — built end to end.</p>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-num">Data · AI</span>
-            <span class="stat-label">Focus</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-num">AWS · PBI</span>
-            <span class="stat-label">Certified</span>
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiayi Fan — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of data analytics, BI dashboards, and web tools by JF."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo">JF<span class="logo-dot">.</span></div>
+        <nav class="header-nav">
+          <a
+            href="mailto:jiayi_fan@alumni.brown.edu"
+            class="nav-link nav-icon"
+            aria-label="Email me"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jiayifan26/"
+            target="_blank"
+            class="nav-link nav-icon"
+            aria-label="LinkedIn"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/jfan4926"
+            target="_blank"
+            class="nav-link nav-icon"
+            aria-label="GitHub"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://theparnassus.xyz/"
+            target="_blank"
+            class="nav-link nav-icon"
+            aria-label="Blog"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 19l7-7 3 3-7 7-3-3z" />
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+              <path d="M2 2l7.586 7.586" />
+              <circle cx="11" cy="11" r="2" />
+            </svg>
+          </a>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-icon sun">&#9728;</span>
+            <span class="theme-icon moon">&#9790;</span>
+          </button>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <!-- Filter -->
-    <section class="filter-bar">
-      <div class="filter-inner">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="da">Data Analysis</button>
-        <button class="filter-btn" data-filter="bi">BI / Dashboard</button>
-        <button class="filter-btn" data-filter="tool">Web Tool</button>
-        <button class="filter-btn" data-filter="academic">Academic</button>
-      </div>
-    </section>
-
-    <!-- Project grid -->
-    <section class="grid-section">
-      <div class="project-grid" id="projectGrid"></div>
-    </section>
-
-    <!-- About & Contact -->
-    <section class="about-section">
-      <div class="about-inner">
-
-        <div class="about-bio">
-          <p class="section-label">About</p>
-          <h2 class="about-title">Building tools that<br>make work smarter.</h2>
-          <p class="about-text">Data-driven software engineer with experience across full-stack development, automation, BI analytics, and enterprise IT systems. I enjoy building practical tools that solve real problems — whether that means streamlining workflows with Python and SQL, developing internal applications, or turning messy data into clear, actionable insights.</p>
-          <p class="about-text">Having worked across teams in both the U.S. and Japan, I'm comfortable moving between technical implementation and cross-functional collaboration. I enjoy experimenting with new tools, shipping solutions quickly, and exploring AI-powered workflows and rapid prototyping.</p>
-          <p class="about-text" style="color: var(--text-3); font-size: 13px;">Outside of work: painting, cooking, rock 'n' roll, and swimming.</p>
-          <div class="contact-links">
-            <a href="mailto:jiayi_fan@alumni.brown.edu" class="contact-chip">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              Email
-            </a>
-            <a href="https://github.com/jfan4926" target="_blank" class="contact-chip">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/jiayifan26/" target="_blank" class="contact-chip">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              LinkedIn
-            </a>
-            <a href="https://theparnassus.xyz/" target="_blank" class="contact-chip">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
-              Blog
-            </a>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-top">
+            <p class="hero-eyebrow">Portfolio</p>
+            <span class="available-badge">
+              <span class="badge-dot"></span>
+              Open to Work
+            </span>
           </div>
-        </div>
-
-        <div class="stack-panel">
-          <p class="section-label">Skills</p>
-
-          <div class="stack-group">
-            <p class="stack-group-label">Languages</p>
-            <div class="stack-tags" data-group="lang">
-              <span class="stag">Python</span>
-              <span class="stag">SQL</span>
-              <span class="stag">JavaScript</span>
-              <span class="stag">TypeScript</span>
-              <span class="stag">Java</span>
-              <span class="stag">HTML / CSS</span>
-              <span class="stag">Bash</span>
+          <h1 class="hero-title">
+            Data &amp; <em class="gradient-text">Tools</em>
+          </h1>
+          <p class="hero-sub">
+            Analytics engineering, BI dashboards, ML models, and AI-powered
+            tools — built end to end.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">Data · AI</span>
+              <span class="stat-label">Focus</span>
             </div>
-          </div>
-
-          <div class="stack-group">
-            <p class="stack-group-label">Data, Analytics & BI</p>
-            <div class="stack-tags" data-group="data">
-              <span class="stag">Power BI</span>
-              <span class="stag">Tableau</span>
-              <span class="stag">Celonis</span>
-              <span class="stag">Palantir Foundry</span>
-              <span class="stag">dbt</span>
-              <span class="stag">DuckDB</span>
-              <span class="stag">ETL Pipelines</span>
-              <span class="stag">Streamlit</span>
-            </div>
-          </div>
-
-          <div class="stack-group">
-            <p class="stack-group-label">ML & AI</p>
-            <div class="stack-tags" data-group="ml">
-              <span class="stag">XGBoost</span>
-              <span class="stag">scikit-learn</span>
-              <span class="stag">SHAP</span>
-              <span class="stag">MLflow</span>
-              <span class="stag">Prophet</span>
-              <span class="stag">Claude API</span>
-              <span class="stag">OpenAI API</span>
-              <span class="stag">LLaMA 3.1</span>
-            </div>
-          </div>
-
-          <div class="stack-group">
-            <p class="stack-group-label">Frameworks & Infrastructure</p>
-            <div class="stack-tags" data-group="infra">
-              <span class="stag">React</span>
-              <span class="stag">Node.js</span>
-              <span class="stag">Azure</span>
-              <span class="stag">AWS</span>
-              <span class="stag">Git</span>
-              <span class="stag">GitHub Actions</span>
-              <span class="stag">Linux</span>
-              <span class="stag">Vercel</span>
-            </div>
-          </div>
-
-          <div class="stack-group">
-            <p class="stack-group-label">Certifications</p>
-            <div class="stack-tags">
-              <a href="https://www.credly.com/badges/e9403349-af2a-4915-9c46-10d5ec72975f/linked_in_profile" target="_blank" class="stag stag-cert">AWS Certified Cloud Practitioner ↗</a>
-              <a href="https://learn.microsoft.com/api/credentials/share/en-us/Jo-5807/DD3075DA4A79745F?sharingId" target="_blank" class="stag stag-cert">Power BI Data Analyst Associate ↗</a>
-            </div>
-          </div>
-
-          <div class="stack-group">
-            <p class="stack-group-label">Languages spoken</p>
-            <div class="stack-tags">
-              <span class="stag">English — Fluent</span>
-              <span class="stag">Mandarin — Native</span>
-              <span class="stag">Cantonese — Fluent</span>
-              <span class="stag">Japanese — Fluent</span>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">AWS · PBI</span>
+              <span class="stat-label">Certified</span>
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- Filter -->
+      <section class="filter-bar">
+        <div class="filter-inner">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="da">Data Analysis</button>
+          <button class="filter-btn" data-filter="bi">BI / Dashboard</button>
+          <button class="filter-btn" data-filter="tool">Web Tool</button>
+          <button class="filter-btn" data-filter="academic">Academic</button>
+        </div>
+      </section>
+
+      <!-- Project grid -->
+      <section class="grid-section">
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <!-- About & Contact -->
+      <section class="about-section">
+        <div class="about-inner">
+          <div class="about-bio">
+            <p class="section-label">About</p>
+            <h2 class="about-title">
+              Building tools that<br />make work smarter.
+            </h2>
+            <p class="about-text">
+              Data-driven software engineer with experience across full-stack
+              development, automation, BI analytics, and enterprise IT systems.
+              I enjoy building practical tools that solve real problems —
+              whether that means streamlining workflows with Python and SQL,
+              developing internal applications, or turning messy data into
+              clear, actionable insights.
+            </p>
+            <p class="about-text">
+              Having worked across teams in both the U.S. and Japan, I'm
+              comfortable moving between technical implementation and
+              cross-functional collaboration. I enjoy experimenting with new
+              tools, shipping solutions quickly, and exploring AI-powered
+              workflows and rapid prototyping.
+            </p>
+            <p class="about-text" style="color: var(--text-3); font-size: 13px">
+              Outside of work: painting, cooking, rock 'n' roll, and swimming.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:jiayi_fan@alumni.brown.edu" class="contact-chip">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                Email
+              </a>
+              <a
+                href="https://github.com/jfan4926"
+                target="_blank"
+                class="contact-chip"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  />
+                </svg>
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jiayifan26/"
+                target="_blank"
+                class="contact-chip"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+                LinkedIn
+              </a>
+              <a
+                href="https://theparnassus.xyz/"
+                target="_blank"
+                class="contact-chip"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                  <path d="M2 2l7.586 7.586" />
+                  <circle cx="11" cy="11" r="2" />
+                </svg>
+                Blog
+              </a>
+            </div>
+          </div>
+
+          <div class="stack-panel">
+            <p class="section-label">Skills</p>
+
+            <div class="stack-group">
+              <p class="stack-group-label">Languages</p>
+              <div class="stack-tags" data-group="lang">
+                <span class="stag">Python</span>
+                <span class="stag">SQL</span>
+                <span class="stag">JavaScript</span>
+                <span class="stag">TypeScript</span>
+                <span class="stag">Java</span>
+                <span class="stag">HTML / CSS</span>
+                <span class="stag">Bash</span>
+              </div>
+            </div>
+
+            <div class="stack-group">
+              <p class="stack-group-label">Data, Analytics & BI</p>
+              <div class="stack-tags" data-group="data">
+                <span class="stag">Power BI</span>
+                <span class="stag">Tableau</span>
+                <span class="stag">Celonis</span>
+                <span class="stag">Palantir Foundry</span>
+                <span class="stag">dbt</span>
+                <span class="stag">DuckDB</span>
+                <span class="stag">ETL Pipelines</span>
+                <span class="stag">Streamlit</span>
+              </div>
+            </div>
+
+            <div class="stack-group">
+              <p class="stack-group-label">ML & AI</p>
+              <div class="stack-tags" data-group="ml">
+                <span class="stag">XGBoost</span>
+                <span class="stag">scikit-learn</span>
+                <span class="stag">SHAP</span>
+                <span class="stag">MLflow</span>
+                <span class="stag">Prophet</span>
+                <span class="stag">Claude API</span>
+                <span class="stag">OpenAI API</span>
+                <span class="stag">LLaMA 3.1</span>
+                <span class="stag">PyTorch</span>
+                <span class="stag">ONNX</span>
+              </div>
+            </div>
+
+            <div class="stack-group">
+              <p class="stack-group-label">Frameworks & Infrastructure</p>
+              <div class="stack-tags" data-group="infra">
+                <span class="stag">React</span>
+                <span class="stag">Node.js</span>
+                <span class="stag">Azure</span>
+                <span class="stag">AWS</span>
+                <span class="stag">Git</span>
+                <span class="stag">GitHub Actions</span>
+                <span class="stag">Linux</span>
+                <span class="stag">Vercel</span>
+              </div>
+            </div>
+
+            <div class="stack-group">
+              <p class="stack-group-label">Certifications</p>
+              <div class="stack-tags">
+                <a
+                  href="https://www.credly.com/badges/e9403349-af2a-4915-9c46-10d5ec72975f/linked_in_profile"
+                  target="_blank"
+                  class="stag stag-cert"
+                  >AWS Certified Cloud Practitioner ↗</a
+                >
+                <a
+                  href="https://learn.microsoft.com/api/credentials/share/en-us/Jo-5807/DD3075DA4A79745F?sharingId"
+                  target="_blank"
+                  class="stag stag-cert"
+                  >Power BI Data Analyst Associate ↗</a
+                >
+              </div>
+            </div>
+
+            <div class="stack-group">
+              <p class="stack-group-label">Languages spoken</p>
+              <div class="stack-tags">
+                <span class="stag">English — Fluent</span>
+                <span class="stag">Mandarin — Native</span>
+                <span class="stag">Cantonese — Fluent</span>
+                <span class="stag">Japanese — Fluent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span class="footer-text">Jiayi Fan</span>
+        <span class="footer-text"
+          >Built with vanilla HTML · CSS · JS ·
+          <a
+            href="https://claude.ai"
+            target="_blank"
+            style="
+              color: inherit;
+              text-decoration: underline;
+              text-underline-offset: 3px;
+              opacity: 0.7;
+            "
+            >Claude</a
+          ></span
+        >
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span class="footer-text">Jiayi Fan</span>
-      <span class="footer-text">Built with vanilla HTML · CSS · JS · <a href="https://claude.ai" target="_blank" style="color:inherit;text-decoration:underline;text-underline-offset:3px;opacity:0.7">Claude</a></span>
-    </div>
-  </footer>
-
-  <script src="data.js"></script>
-  <script src="main.js"></script>
-</body>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
