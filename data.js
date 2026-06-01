@@ -118,6 +118,7 @@ const PROJECTS = [
         "Mobile-first PWA deployed on Netlify — installable, works offline",
       ],
       techDetail: "CNN trained in PyTorch on synthetically generated kanji images (font variations, noise augmentation, stroke distortion) from KanjiVG vector data. Exported to ONNX and loaded in-browser with onnxruntime-web. DTW stroke matching runs against reference stroke sequences stored as JSON. No backend — all inference, progress state, and assets are client-side.",
+      extraImage: { src: "images/kanji-curve.png", caption: "Training loss & accuracy curve — MobileNetV3-Small on 630K synthetic kanji images" },
     },
   },
   {

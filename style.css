@@ -638,6 +638,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: var(--accent);
 }
 
+.detail-figure {
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.detail-figure img {
+  width: 100%;
+  display: block;
+}
+.detail-figure figcaption {
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--text-3);
+  background: var(--surface-2);
+  border-top: 1px solid var(--border);
+}
+
 .detail-sidebar { display: flex; flex-direction: column; gap: 16px; }
 .sidebar-card {
   background: var(--surface);

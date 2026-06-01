@@ -58,6 +58,11 @@ if (!project) {
           <ul>${highlightsHtml}</ul>
           <h2>Technical Notes</h2>
           <p>${project.detail.techDetail}</p>
+          ${project.detail.extraImage ? `
+          <figure class="detail-figure">
+            <img src="${project.detail.extraImage.src}" alt="${project.detail.extraImage.caption}" loading="lazy" />
+            <figcaption>${project.detail.extraImage.caption}</figcaption>
+          </figure>` : ''}
         </div>
         <aside class="detail-sidebar">
           <div class="sidebar-card">
